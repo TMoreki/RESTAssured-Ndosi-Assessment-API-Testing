@@ -5,7 +5,7 @@ import io.restassured.response.Response;
 import static commons.Paths.BASE_URL;
 import static io.restassured.RestAssured.given;
 
-public class CourseRequestBuilder {
+public class  CourseRequestBuilder {
 
     public static Response getCourses() {
         String apiPath = "/APIDEV/courses";
