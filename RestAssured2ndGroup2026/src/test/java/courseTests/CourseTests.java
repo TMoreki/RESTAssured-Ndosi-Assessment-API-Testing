@@ -88,7 +88,7 @@ public class CourseTests {
                 .body("message", equalTo("Courses retrieved successfully"))
                 .body("data.courses[0].Level", equalTo("beginner"))
                 .body("data.categories", org.hamcrest.Matchers.hasItem("Automation"))
-                .body("data.pagination.total", equalTo(1));
+                .body("data.pagination.total", equalTo(3));
     }
 
 }

@@ -11,6 +11,7 @@ public class UserRegistrationTests {
     String BaseURL = "https://ndosiautomation.co.za/APIDEV";
     String registeredUserId;
     String adminToken;
+    String uniqueEmail = "Group01Test" + System.currentTimeMillis() + "@test.com";
 
     @Test (priority = 1)
     public void userRegistrationTest() {
@@ -20,7 +21,7 @@ public class UserRegistrationTests {
         String userRegistrationPayload = "{\n" +
                 "  \"firstName\": \"Lebo\",\n" +
                 "  \"lastName\": \"Testing\",\n" +
-                "  \"email\": \"Group01Test@test.com\",\n" +
+                "  \"email\": \"" + uniqueEmail + "\",\n" +
                 "  \"password\": \"1234567!\",\n" +
                 "  \"confirmPassword\": \"1234567!\",\n" +
                 "  \"groupId\": \"c1ce77c4-bd1a-42ae-901f-fc3e534c55b8\"\n" +
